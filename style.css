@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans&display=swap');
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.main-page, .start-page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3D0D35;
+}
+.title{
+    font-size: 25px;
+}
+.result{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.difficulty-page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.difficulty{
+    text-align: center;
+    border: 1px solid black;
+    height: 20px;
+    padding: 25px;
+    margin: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.start-page{
+    display: none;
+}
+
+.start-btn{
+    border-radius: 5px;
+}
+
+.main-page{
+    display: none;
+}
+.question{
+    font-size: 5em;
+    text-align: center;
+}
+
+.answer{
+    text-align: center;
+    border: 1px solid #731536;
+    height: 20px;
+    padding: 25px;
+    margin: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.answer-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.difficulty, .start-btn, .answer{
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #3D0D35;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #ff882f;
+    outline: 1px solid #ff882f;
+    outline-color: #ffbb76;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1); 
+}
+.difficulty:hover, .start-btn:hover,
+.difficulty:hover, .start-btn:active,
+.difficulty:hover, .start-btn:focus {
+    box-shadow: inset 0 0 20px #ffaa5e;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    color: #3D0D35;
+}
